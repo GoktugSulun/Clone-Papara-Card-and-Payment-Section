@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+* body .container {
+  width: inherit;
+  height: inherit;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+* body .container .form {
+  margin-top: 85px;
+  width: 740px;
+  height: 500px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+* body .container .form .card-info-form {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 330px;
+  top: 170px;
+  padding: 40px 70px;
+  font-family: 'Roboto', sans-serif;
+}
+
+* body .container .form .card-info-form .card-sec {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+* body .container .form .card-info-form label {
+  color: #999;
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  opacity: .7;
+  display: inline-block;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+* body .container .form .card-info-form label.active {
+  top: -10px;
+  left: 8px;
+  opacity: 1;
+  font-size: .9rem;
+  padding: 0 10px;
+  background: #fff;
+}
+
+* body .container .form .card-info-form label + input {
+  display: block;
+  width: 100%;
+  padding: 10px 30px;
+  border: none;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+}
+
+* body .container .form .card-info-form input.holder {
+  text-transform: uppercase;
+}
+
+* body .container .form .card-info-form input::-webkit-outer-spin-button,
+* body .container .form .card-info-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+* body .container .form .card-info-form .card-exp-cvv-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* body .container .form .card-info-form .submit-section .btnSubmit {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ddd;
+  color: #fff;
+  letter-spacing: 2px;
+  background: #1F2225;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+* body .container .form .credit-card {
+  width: 540.3px;
+  height: 340px;
+  position: relative;
+  top: -170px;
+  left: 100.15px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+
+* body .container .form .credit-card .front-face.turn {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+* body .container .form .credit-card .back-face.turn {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+* body .container .form .credit-card .front-face, * body .container .form .credit-card .back-face {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: #1F2225;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  color: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+* body .container .form .credit-card .front-face {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+* body .container .form .credit-card .front-face .contactless {
+  position: absolute;
+  padding: 30px;
+  top: 30px;
+  left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body .container .form .credit-card .front-face .contactless span {
+  position: absolute;
+  display: inline-block;
+  margin-bottom: 15px;
+  border: 5px solid transparent;
+  border-top-color: grey;
+  border-radius: 50%;
+}
+
+* body .container .form .credit-card .front-face .contactless span:nth-child(1) {
+  width: 85px;
+  height: 85px;
+  top: 0px;
+}
+
+* body .container .form .credit-card .front-face .contactless span:nth-child(2) {
+  width: 65px;
+  height: 65px;
+  top: 10px;
+}
+
+* body .container .form .credit-card .front-face .contactless span:nth-child(3) {
+  width: 45px;
+  height: 45px;
+  top: 20px;
+}
+
+* body .container .form .credit-card .front-face .contactless span:nth-child(4) {
+  width: 25px;
+  height: 25px;
+  top: 30px;
+}
+
+* body .container .form .credit-card .front-face .chip {
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  top: 125px;
+  left: 65px;
+  background: #888888;
+  opacity: .6;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 5px;
+}
+
+* body .container .form .credit-card .front-face .chip span {
+  position: inherit;
+  background: #383838;
+}
+
+* body .container .form .credit-card .front-face .chip span:nth-child(1) {
+  width: 20px;
+  height: 2px;
+  top: 15.3px;
+}
+
+* body .container .form .credit-card .front-face .chip span:nth-child(2) {
+  width: 20px;
+  height: 2px;
+  top: 32.6px;
+}
+
+* body .container .form .credit-card .front-face .chip span:nth-child(3) {
+  width: 2px;
+  height: 38px;
+  top: 6px;
+  left: 20px;
+  border-radius: 15px;
+}
+
+* body .container .form .credit-card .front-face .chip span:nth-child(4) {
+  width: 15px;
+  height: 2px;
+  top: 6px;
+  left: 20px;
+  border-radius: 15px;
+}
+
+* body .container .form .credit-card .front-face .chip span:nth-child(5) {
+  width: 2px;
+  height: 8px;
+  top: 0;
+  left: 33px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+* body .container .form .credit-card .front-face .chip span:nth-child(6) {
+  width: 30px;
+  height: 2px;
+  top: 42px;
+  left: 20px;
+  border-radius: 15px;
+}
+
+* body .container .form .credit-card .front-face .chip span:nth-child(7) {
+  width: 2px;
+  height: 28px;
+  top: 15px;
+  left: 48px;
+  border-radius: 15px;
+}
+
+* body .container .form .credit-card .front-face .chip span:nth-child(8) {
+  width: 22px;
+  height: 2px;
+  top: 15px;
+  left: 48px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+* body .container .form .credit-card .front-face .chip span:nth-child(9) {
+  width: 22px;
+  height: 2px;
+  top: 33px;
+  left: 48px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+* body .container .form .credit-card .front-face .chip span:nth-child(10) {
+  width: 2px;
+  height: 8px;
+  top: 42px;
+  left: 33px;
+}
+
+* body .container .form .credit-card .front-face .papara {
+  position: absolute;
+  top: 190px;
+  left: 180px;
+  width: 200px;
+  height: 50px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-family: sans-serif;
+  line-height: 50px;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  color: #080808;
+  opacity: .4;
+  text-shadow: 2px 2px 2px grey;
+}
+
+* body .container .form .credit-card .front-face .master-card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 220px;
+}
+
+* body .container .form .credit-card .front-face .master-card .circle1, * body .container .form .credit-card .front-face .master-card .circle2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 20px;
+  border-radius: 50%;
+}
+
+* body .container .form .credit-card .front-face .master-card .circle1 {
+  top: 30px;
+  background: #F89E1C;
+}
+
+* body .container .form .credit-card .front-face .master-card .circle1:before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 7px;
+  z-index: 9999;
+  background: #F06421;
+  width: 45px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+* body .container .form .credit-card .front-face .master-card .circle2 {
+  top: 65px;
+  background: #E31B23;
+}
+
+* body .container .form .credit-card .front-face .card-type {
+  position: absolute;
+  top: 270px;
+  right: 15px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  letter-spacing: 10px;
+  font-size: .7rem;
+  width: 60px;
+  height: 20px;
+}
+
+* body .container .form .credit-card .back-face {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+* body .container .form .credit-card .back-face .general-info {
+  width: inherit;
+  height: 30px;
+  color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: .7rem;
+  padding: 0 10px;
+}
+
+* body .container .form .credit-card .back-face .black-line {
+  width: inherit;
+  height: 60px;
+  background: #000;
+}
+
+* body .container .form .credit-card .back-face .general-info-2 {
+  width: inherit;
+  height: 40px;
+  color: grey;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: .7rem;
+}
+
+* body .container .form .credit-card .back-face .general-info-2 span:nth-child(1) {
+  margin-right: 20px;
+}
+
+* body .container .form .credit-card .back-face .cvv-section {
+  width: 350px;
+  height: 50px;
+  background: grey;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* body .container .form .credit-card .back-face .cvv-section .points {
+  width: 300px;
+  height: inherit;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10px)[30];
+      grid-template-columns: repeat(30, 10px);
+  -ms-grid-rows: (8px)[6];
+      grid-template-rows: repeat(6, 8px);
+  place-items: center;
+}
+
+* body .container .form .credit-card .back-face .cvv-section .points .point {
+  width: 3px;
+  height: 3px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: .5;
+}
+
+* body .container .form .credit-card .back-face .cvv-section .cvv {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+  line-height: 18px;
+  font-style: italic;
+  font-size: 18px;
+}
+
+* body .container .form .credit-card .back-face .cvv-section .cvv .italic {
+  -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+          transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+  color: #000;
+}
+
+* body .container .form .credit-card .back-face .card-infos-section {
+  width: 480px;
+  height: 130px;
+  margin: 10px 0 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .container .form .credit-card .back-face .card-infos-section .mc-logo {
+  width: 120px;
+  height: inherit;
+}
+
+* body .container .form .credit-card .back-face .card-infos-section .mc-logo .logo {
+  margin-left: 10px;
+  width: 100px;
+  border-radius: 50px;
+  margin-top: 15px;
+  height: 60px;
+  background: grey;
+  position: relative;
+}
+
+* body .container .form .credit-card .back-face .card-infos-section .mc-logo .logo:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background: #adadad;
+}
+
+* body .container .form .credit-card .back-face .card-infos-section .card-infos {
+  width: 360px;
+  height: inherit;
+  padding: 15px 0 0 10px;
+}
+
+* body .container .form .credit-card .back-face .card-infos-section .card-infos .card-no {
+  font-size: 2rem;
+  height: 37px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  color: #dadad7;
+}
+
+* body .container .form .credit-card .back-face .card-infos-section .card-infos .last-date {
+  margin-bottom: 10px;
+}
+
+* body .container .form .credit-card .back-face .card-infos-section .card-infos .last-date .title-valid-date {
+  font-size: .5rem;
+  letter-spacing: 1.35px;
+  color: grey;
+}
+
+* body .container .form .credit-card .back-face .card-infos-section .card-infos .last-date .valid-date {
+  height: 22px;
+  font-size: 1.2rem;
+  color: #dadad7;
+}
+
+* body .container .form .credit-card .back-face .card-infos-section .card-infos .card-user-name {
+  height: 18px;
+  letter-spacing: 1.35px;
+  color: #dadad7;
+}
+
+* body .box {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: red;
+  top: -200px;
+  left: -200px;
+}
+
+* body .box:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=style.css.map */

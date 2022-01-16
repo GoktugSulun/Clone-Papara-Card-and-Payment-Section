@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Credit Card </title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="container">
+      
+      <form class="form">
+
+         <div class="card-info-form">
+
+            <div class="card-sec card-number-section">
+               <label class="nu" for="card-number"> CARD NUMBER </label>
+               <input type="text" id="card-number" maxlength="19">
+            </div>
+
+            <div class="card-sec card-holder-section">
+               <label for="card-holder"> CARD HOLDER </label>
+               <input class="holder" type="text" id="card-holder">
+            </div>
+
+            <div class="card-exp-cvv-section">
+               <div class="card-sec">
+                  <label for="card-exp"> EXPIRATION DATE </label>
+                  <input type="text" id="card-exp" maxlength="5">
+               </div>
+
+               <div class="card-sec" >
+                  <label for="card-cvv"> CVV </label>
+                  <input type="text" id="card-cvv" maxlength="3">
+               </div>
+            </div>
+
+            <div class="submit-section">
+               <button class="btnSubmit"> SUBMIT </button>
+            </div>
+
+
+         </div>
+
+         <!-- CREDIT CARD -->
+         <div class="credit-card">
+
+            <!-- FRONT FACE-->   
+            <div class="front-face">
+               <div class="contactless">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+   
+               <div class="chip">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+   
+               <div class="papara">
+                  papara
+               </div>
+   
+               <div class="master-card">
+                  <div class="circle1"></div>
+                  <div class="circle2"></div>
+               </div>
+   
+               <div class="card-type">
+                  BLACK
+               </div>
+   
+            </div>
+   
+            <!-- BACK FACE-->
+            <div class="back-face">
+               
+               <div class="general-info">
+                  <div>
+                     Müşteri Hizmetleri 0850 340 0 340
+                  </div>
+                  <div>
+                     Bu kartın mülkiyeti Papara Elektronik Para ve Ödeme Himetleri A.Ş'ye aittir.
+                  </div>
+               </div>
+   
+               <div class="black-line"></div>
+   
+               <div class="general-info-2">
+                  <div>
+                     <span>YETKİLİ İMZA</span>
+                     <span> İMZALANMADIĞI TAKDİRDE GEÇERSİZDİR </span>
+                  </div>
+                  <div>
+                     papara.com
+                  </div>
+               </div>
+   
+               <div class="cvv-section">
+                  <div class="points"></div>
+                  <div class="cvv"> <span class="italic">***</span> </div>
+               </div>
+   
+               <div class="card-infos-section">
+                  <div class="mc-logo">
+                     <div class="logo"></div>
+                  </div>
+                  <div class="card-infos">
+                     <div class="card-no">  **** **** **** **** </div>
+                     <div class="last-date">
+                        <div class="title-valid-date">VALID THRU</div>
+                        <div class="valid-date"> **/** </div>
+                     </div>
+                     <div class="card-user-name">
+                        CARD HOLDER
+                     </div>
+                  </div>
+               </div>
+   
+            </div>
+   
+         </div>
+
+      </form>
+
+   </div>
+
+ 
+   
+
+   <script src="script.js"></script>
+</body>
+</html>
